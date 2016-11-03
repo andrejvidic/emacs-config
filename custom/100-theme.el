@@ -48,8 +48,8 @@
 '(ido-subdir ((t (:foreground "deep sky blue"))))
 
 ;;---Font-lock---
-'(font-lock-comment-delimiter-face ((t (:foreground "chocolate1" :slant italic))))
-'(font-lock-comment-face ((t (:foreground "chocolate1" :slant italic))))
+'(font-lock-comment-delimiter-face ((t (:foreground "chocolate1" :slant normal))))
+'(font-lock-comment-face ((t (:foreground "chocolate1" :slant normal))))
 '(font-lock-doc-face ((t (:foreground "orange1"))))
 '(font-lock-function-name-face ((t (:foreground "yellow2" :weight semibold))))
 '(font-lock-preprocessor-face ((t (:foreground "LightSkyBlue1"))))
