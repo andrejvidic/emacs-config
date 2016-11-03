@@ -143,6 +143,11 @@
 '(mode-line-inactive ((t (:background "gray30" :foreground "#f9f9f9" :box nil))))
 '(mode-line-buffer-id ((t (:foreground "black" :box nil :weight bold))))
 
+;;---Power-line---
+'(powerline-active1 ((t (:inherit mode-line :background "gray40" :foreground "black"))))
+'(powerline-active2 ((t (:inherit mode-line :background "dark gray" :foreground "black"))))
+'(powerline-inactive1 ((t (:inherit mode-line-inactive :background "gray10" :foreground "white"))))
+'(powerline-inactive2 ((t (:inherit mode-line-inactive :background "gray25" :foreground "white"))))
 )
 
 ;; OKAY THEMES
