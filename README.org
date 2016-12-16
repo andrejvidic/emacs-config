@@ -11,6 +11,17 @@ Run installation script
 : cd ~/.emacs.d
 : ./install
 
+Start emacs
+: emacs
+
+List packages (Note: M-x is emacs way of saying Alt + x)
+: M-x list-packages
+
+Install use-package with 
+: M-x package-install use-package
+
+Then restart emacs and it should start building the packages, if it asks you to build pdf-tools say yes and in the compile buffer it will show the results. If this compile is needed then after the compile is finished you will need to restart emacs again for the final run of packages.
+
 *** Manually
  Install my sub modules
  : git submodule init
@@ -63,6 +74,22 @@ Create a ~/.emacs.randr.el file and put the following
 : (exwm-randr-enable)
 
 Remember to change the LVDS1 & DP2 to your screens which you can find out by typing in xrandr at the command line and looking for the active screens.
+
+** flycheck configure
+
+Installing
+: npm install -g coffeelint eslint
+: gem install scss_lint rubocop
+
+Add this to your ~/.emacs.d/.emacs.custom.el file.
+: (custom-set-variables
+:  '(flycheck-ruby-rubocop-executable "/usr/local/rbenv/shims/rubocop" )
+:  '(flycheck-javascript-eslint-executable "/opt/node-v5.5.0-linux-x64/bin/eslint")
+:  '(flycheck-coffee-coffeelint-executable "/opt/node-v5.5.0-linux-x64/bin/coffeelint")
+:  '(flycheck-coffeelintrc "~/coffeelint.json"))
+
+Make the config file for coffeelint
+: coffeelint --makeconfig > coffeelint.json
 
 ** Requirements
 

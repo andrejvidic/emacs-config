@@ -1,3 +1,5 @@
+(use-package powerline)
+
 ;;Initalise powerline mode line theme. Used with moe-theme
 (require 'powerline)
 
@@ -48,7 +50,8 @@
 
 ;; Remove & Hide from Mode-line
 ;; Hide ruby version from mode line
-(global-rbenv-mode -1)
+;; You cannot use this as it will break rbenv from working.
+;(global-rbenv-mode -1)
 
 ;; Remove the load
 (setq display-time-default-load-average nil)

@@ -27,14 +27,14 @@
 
 ;; Setup external directory variable
 (setq elisp-external-dir
-	  (expand-file-name "external" user-emacs-directory))
+    (expand-file-name "external" user-emacs-directory))
 
 ;; Add external projects to load path
 (add-to-list 'load-path elisp-external-dir)
 
 (dolist (project (directory-files elisp-external-dir t "\\w+"))
   (when (file-directory-p project)
-	(add-to-list 'load-path project)))
+  (add-to-list 'load-path project)))
 
 ; Auto revert unless there is unsaved data
 (global-auto-revert-mode t)
@@ -44,3 +44,10 @@
 
 ;; Use highlight colors
 (global-font-lock-mode t)
+
+;; ;; Clean up whitepace before saving a file
+;; ;; Exclude this from org-mode
+;; (add-hook 'before-save-hook 'whitespace-cleanup)
+
+;; Save desktop
+(desktop-save-mode 1)
