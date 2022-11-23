@@ -128,7 +128,6 @@
 (load "52-rainbow.el")               ; Highlight colours in scss files
 (load "53-magit.el")                 ; Git
 (load "54-yasnippet.el")             ; Yasnippets BUG: https://github.com/capitaomorte/yasnippet/issues/631
-(load "55-rinari.el")                ; Ruby on rails mode
 (load "56-rsense.el")                ; Command Lookup
 ;;(load "57-auto-complete.el")       ; Auto complete
 ;; (load "58-highlight-indentation.el") ; Highlight tabs ;; Slows down interface too much!
