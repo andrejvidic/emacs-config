@@ -164,6 +164,7 @@
 ;;--------------------------------------------------------------------------------
 ;; Windows manager, appearance and shortcut keys
 ;;--------------------------------------------------------------------------------
+(load "94-perspective.el")            ; organise buffers by project
 (load "94-i3.el")                     ; i3
 (load "95-resize-buffer.el")          ; Resize buffer
 (load "97-shortcuts.el")              ; Keyboard shortcuts
