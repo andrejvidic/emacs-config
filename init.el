@@ -22,7 +22,6 @@
 
 (add-to-list 'load-path "~/.emacs.d/custom")
 (add-to-list 'load-path "~/.emacs.d/external") ; Plugins not in the repo
-(add-to-list 'load-path "~/.emacs.d/external/4gl-mode-master")
 
 (load "102-performance.el")
 
@@ -69,9 +68,6 @@
 (use-package org-cliplink :ensure t :defer 5)
 (use-package org-clock-csv :ensure t :defer 5)
 (use-package org-clock-today :ensure t :defer 5)
-
-;; 4gl mode from external
-(require '4gl-mode)
 
 ;; All custom files have a number at the front so they don't clash with the library files.
 ;;--------------------------------------------------------------------------------
