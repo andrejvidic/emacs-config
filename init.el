@@ -161,15 +161,11 @@
 (load "88-arduino_mode.el")
 
 ;;--------------------------------------------------------------------------------
-;;-EXWM, appearance and shortcut keys
+;; Windows manager, appearance and shortcut keys
 ;;--------------------------------------------------------------------------------
 (load "94-i3.el")                     ; i3
 (load "95-resize-buffer.el")          ; Resize buffer
 (load "97-shortcuts.el")              ; Keyboard shortcuts
-
-;; (if (file-exists-p "~/.xinitrc")
-;;     (load "98-exwm.el")                    ; Emacs X Windows Manager
-;; )
 
 (if (file-exists-p "~/.emacs.d/.emacs.autostart.el")
     (load "~/.emacs.d/.emacs.autostart.el")
@@ -196,10 +192,3 @@
 ;; Read in custom settings for the user
 (load "~/.emacs.d/.emacs.custom.el")
 
-;;;; Refer to issue 216 on exwm for a discussion on this.
-;; (require 'desktop)
-;; (setq desktop-save 1
-;;       desktop-load-locked-desktop t
-;;       desktop-dirname user-emacs-directory
-;;       desktop-files-not-to-save "\\(^/[^/:]*:\\|(ftp)$\\)\\|\\(\\.gpg$\\)")
-;; (desktop-save-mode 1)
