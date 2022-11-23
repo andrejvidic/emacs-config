@@ -131,7 +131,6 @@
 (load "54-yasnippet.el")             ; Yasnippets BUG: https://github.com/capitaomorte/yasnippet/issues/631
 (load "56-rsense.el")                ; Command Lookup
 ;;(load "57-auto-complete.el")       ; Auto complete
-;; (load "58-highlight-indentation.el") ; Highlight tabs ;; Slows down interface too much!
 (load "59-highlight-parentheses.el") ; Highlights start and end of parentheses.
 (load "60-yafolding.el")             ; yafolding
 (load "61-ruby-refactor.el")
