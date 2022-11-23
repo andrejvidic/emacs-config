@@ -1,5 +1,8 @@
-;; Setup company stats to sort most commonly used ones at the top.
+;;; Package --- summary
+;;; Commentary:
+;;; Setup company stats to sort most commonly used ones at the top.
 
+;;; Code:
 (use-package company-statistics
   :init
   (company-statistics-mode)
@@ -8,4 +11,5 @@
   (add-hook 'after-init-hook 'global-company-mode) ;; Use in all buffers
   :defer 5
   )
+;;; 77-company-mode.el ends here
 
